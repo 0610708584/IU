@@ -1,9 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Formulario</title>
-</head>
-<body>
-    <h1>Hola mundo</h1>
-</body>
-</html>
+<form action="" >
+    <p>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" title='Introduzca su nombre.' required="required" autocomplete="nombre"/>
+    </p>
+    <p>
+        <label for="apellido1">Primer apellido: </label>
+        <input type="text" name="apellido1" id="apellido1" title='Introduzca su primer apellido.' required="required" autocomplete="apellido1"/>
+    </p>
+    <p>
+        <label for="fechaNacimiento">Fecha de nacimiento: </label>
+        <input type="date" name="fechaNacimiento" id="fechaNacimiento" title='Seleccione su fecha de nacimiento.' required="required" autocomplete="fechaNacimiento"/>
+    </p>
+    <p>
+        <label for="email">Correo electrónico: </label>
+        <input type="email" name="email" id="email" title='Introduzca su correo electrónico.' required="required" autocomplete="email"/>
+    </p>
+    <p>
+        <label for="telefono">Teléfono: </label>
+        <input type="tel" name="telefono" id="telefono" title='Introduzca su número de teléfono.' placeholder="123456789" pattern="[0-9]{9}" required="required" autocomplete="telefono"/>
+    </p>
+    <p>
+        <label for="contrasena">Contraseña: </label>
+        <input type="password" name="contrasena" id="contrasena" title='Introduzca una contraseña.' required="required" autocomplete="contrasena"/>
+    </p>
+    <p>
+        <label for="colorFavorito">Color favorito: </label>
+        <input type="color" name="colorFavorito" id="colorFavorito" title='Marque su color favorito.' autocomplete="colorFavorito"/>
+    </p>
+    <input type="submit" value="Registrarse"/>
+</form>
